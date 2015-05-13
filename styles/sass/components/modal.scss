@@ -1,0 +1,43 @@
+.modal {
+	display: none;
+
+	&.opened {
+		display: block;
+	}
+
+	.content {
+		display: block;
+		left: 50%;
+		overflow: hidden;
+		position: fixed;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		z-index: 3;
+		width: 100%;
+	}
+
+	.job-img-list {
+		margin: 0;
+		transition: all 0.2s linear;
+
+		li {
+			float: left;
+			list-style: none;
+			margin: 0;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.mask {
+		background: rgba(0,0,0,0.8);
+		height: 100%;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+	}
+}
